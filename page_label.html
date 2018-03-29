@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+   
+    <head>
+        <meta charset=utf-8>
+        <meta name="description" content="définitions des balises html">
+        <meta name="keywords" content="HTML, Balises">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pagegraphique.css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+        <link rel="icon" type="image/png" href="logo.png" />
+        <title>Balises</title>
+    </head>
+
+<body>
+    <div class="header"> 
+        
+        <nav class="menu">
+               <ul>  
+                    <li><a href="index.html">Accueil</a></li>                    
+                    <li><a href="page_footer.html">footer</a></li>
+                    <li><a href="page_a.html">a</a></li>
+                    <li><a href="page_section.html">section</a></li>
+                    <li><a href="page_link.html">link</a></li>
+                    <li><a href="page_meta.html">meta</a></li>
+                    <li><a href="page_label.html">label</a></li>
+                    <li><a href="page_nav.html">nav</a></li>
+                    <li><a href="page_mark.html">mark</a></li>
+                    <li><a href="page_article.html">article</a></li>
+                    <li><a href="page_head.html">head</a></li>
+                    <li><a href="page_header.html">header</a></li>
+                    <li><a href="page_fieldset.html">fieldset</a></li>
+                    
+            </ul>
+        </nav>
+        
+    </div>
+
+    <div class="def">
+        
+        <h2> La Balise &lt;LABEL&gt;</h2><br><br>
+            <p>
+
+                L’élément <span class="spana">&lt;label&gt;</span> permet de donner un intitulé à un champ de formulaire comme par exemple un &lt;input&gt; de type &lt;text&gt;,<br> un &lt;textarea&gt; ou encore les champs de type &lt;radio&gt; ou &lt;checkbox&gt;, parmi les plus utilisés.<br><br>
+
+Son utilisation permet aux navigateurs d’associer cet intitulé au champ de formulaire. <br>Ainsi, un clic sur l’intitulé donnera le focus au champs de formulaire, ce qui est très pratique par exemple pour les boutons radio ou cases à cocher parfois trop petites pour certains utilisateurs.<br>
+
+Ce mécanisme est important également pour les lecteurs d’écran, qui ont besoin d'étiquettes explicites pour <strong>associer chaque champ de formulaire à un texte.</strong>
+
+
+
+</p> 
+<h3>Les labels explicites</h3>
+<img src="labels1.png" alt="photo exemple de label"/>
+
+<p>
+La syntaxe à utiliser est la suivante : <br>
+
+<textarea disabled rows="2" cols="50"> <label for="mon_id">Chercher:</label>
+<input id="mon_id" type="text" /> </textarea><br><br>
+
+L’élément <span class="spana">&lt;label&gt;</span> peut être séparé du champ de formulaire (ici un élément input de type text), ou bien il peut l’encadrer de la manière suivante:<br><br>
+
+<textarea disabled rows="5" cols="50"><label for="mon_id">
+Chercher:
+<input id="mon_id" type="text" />
+</label></textarea><br><br>
+
+Dans tous les cas, pour que le label soit explicite, il faut utiliser les attributs for (sur l’élément label) et id (sur le champ de formulaire) avec la même valeur.<br><br>
+
+Les <span class="spana">&lt;label&gt;</span> peuvent aussi être utilisés sur les éléments &lt;select&gt; mais ne doivent pas être utilisés pour les éléments &lt;input&gt; de type &lt;submit&gt;, &lt;reset&gt; ou &lt;image&gt;, ou encore pour les éléments &lt;button&gt;.<br> Ces derniers ont déjà une étiquette grâce aux attributs &lt;value&gt; ou &lt;alt&gt;. La valeur de ces derniers doit alors clairement indiquer la fonction du contrôle.<br> Éviter les «OK» et autres «Pouët!».<br><br>
+
+Attention, l’attribut &lt;name&gt; des champs de formulaire possède un rôle différent, il permettra de recueillir la valeur du champ après validation du formulaire, par exemple en PHP.<br> On peut tout à fait utiliser la même valeur pour les attributs &lt;id&gt; et &lt;name&gt; d’un élément &lt;input&gt;, &lt;select&gt; ou &lt;textarea&gt;.<br> On peut aussi utiliser des valeurs différentes, comme dans l’exemple suivant:<br><br>
+
+<textarea disabled rows="5" cols="50"><label for="form-message">Message:</label>
+
+<textarea id="form-message" name="message"> ... </textarea>
+
+</textarea> <br><br> 
+
+<h3>Les labels implicites (déconseillé!)</h3>
+
+
+<p> On parle de label implicite pour la syntaxe suivante: </p> 
+
+<textarea disabled rows="5" cols="50"><label>
+Chercher:
+<input type="text" />
+</label></textarea><br><br>
+
+<p> Cette syntaxe est présentée dans la spécification HTML,<br> mais elle présente un défaut majeur: <br>comme elle n’utilise pas les attributs &lt;for&gt; et &lt;id&gt;,<br> les navigateurs n’associent pas bien l’intitulé au champ de formulaire.<br> Cela posera problème aux lecteurs d’écran notamment. </p> 
+
+            
+    </div>
+
+    <div class="droite"> 
+
+        <img class="pix" src="https://pbs.twimg.com/profile_images/969562652639989760/2e0rAghb_400x400.jpg" alt="Avatar Dorothée">
+        <img class="pix" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/28468680_109451666554612_6844006574877310976_n.jpg?oh=2a14b77e637ac143908f3bee8f3c43e6&oe=5B454D3F"  alt="Avatar Arnaud">
+        <img class="pix" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/28472030_111713689661444_526320251754006447_n.jpg?oh=25b5353180186c9ad4e565f027c3ce07&oe=5B41C9BB" alt="Avatar Pierre">
+
+    </div>
+
+</body>
+
+</html>

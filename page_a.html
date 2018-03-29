@@ -1,0 +1,135 @@
+<!DOCTYPE HTML>
+<html>
+   
+    <head>
+        <meta charset=utf-8>
+        <meta name="description" content="définitions des balises html">
+        <meta name="keywords" content="HTML, Balises">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="pagegraphique.css" media="all" />
+        <link href="https://fonts.googleapis.com/css?family=Dosis:200,300,400,500,600,700,800" rel="stylesheet">
+        <link rel="icon" type="image/png" href="logo.png" />
+        <title>Balises</title>
+    </head>
+
+<body>
+    <div class="header"> 
+        
+        <nav class="menu">
+               <ul>  
+                    <li><a href="index.html">Accueil</a></li>                    
+                    <li><a href="page_footer.html">footer</a></li>
+                    <li><a href="page_a.html">A</a></li>
+                    <li><a href="page_section.html">section</a></li>
+                    <li><a href="page_link.html">link</a></li>
+                    <li><a href="page_meta.html">meta</a></li>
+                    <li><a href="page_label.html">label</a></li>
+                    <li><a href="page_nav.html">nav</a></li>
+                    <li><a href="page_mark.html">mark</a></li>
+                    <li><a href="page_article.html">article</a></li>
+                    <li><a href="page_head.html">head</a></li>
+                    <li><a href="page_header.html">header</a></li>
+                    <li><a href="page_fieldset.html">fieldset</a></li>
+                    
+            </ul>
+        </nav>
+        
+    </div>
+
+    <div class="def">
+        <h1> La Balise &lt;A&gt;</h1>
+            <textarea disabled rows="4" cols="75">
+
+<a title="Titre du lien" href="http://www.adresse-du-lien.fr">
+Ceci est un lien</a>
+
+</textarea><br><br>
+
+
+        <p> La balise <span class="spana"> &lt;a&gt;</span> définit un lien hypertexte, qui est utilisé pour relier une page à l’autre.<br>
+            L’attribut le plus important de la balise <span class="spana"> &lt;a&gt;</span> est l’attribut href, qui indique la destination du lien.<br><br>
+
+
+    Par défaut, les liens apparaissent dans tous les navigateurs suivant cette ordre : <br>Un lien non visité est souligné et bleu, un lien visité est souligné et violet, Un lien actif est souligné et rouge. Vous pouvez changer le style de vos liens grâce au CSS (Feuille de style).<br><br>
+
+Les attributs: &lt;hreflang&gt;, &lt;media&gt;, &lt;rel&gt;, &lt;target&gt;, et &lt;type&gt; ne peuvent être utiliser sans l’attribut &lt;href&gt;.<br><br>
+
+</p>
+
+<h3> Evolution par rapport au HTML 4.01</h3>
+
+
+    <p> En HTML 4.01, la balise <span class="spana"> &lt;a&gt;</span> pouvait soit être un lien hypertexte soit un lien vers une ancre. <br>En HTML5, cette balise sera uniquement un lien hypertexte, mais si elle n’a pas l’attribut href, elle reste un espace réservé pour un lien hypertexte.<br><br>
+
+HTML5 a quelques nouveaux attributs, et certains attributs HTML 4.01 ne sont pas pris en charge dans HTML5.
+
+
+</p>
+
+<h3>Attribut pour la balise : &lt;a&gt;</h3>
+
+
+<p>
+
+    <span class="spanb">href</span> : url .. Indique l'adresse de la page vers laquelle pointe le lien<br><br>
+
+    <span class="spanb">hreflang</span> : language code ... Indique la langue de la page vers laquelle pointe le lien<br><br>
+
+    <span class="spanb">media</span> : media query ...<br> Indique le type de document vers laquelle pointe le lien. La valeur par défaut est : all<br><br>
+
+    <span class="spanb">rel</span> : alternate, author; bookmark; external; help; license; next; nofollow; noreferrer; prefetch; prev; search; sidebar; tag ... <br>Indique la relation entre le document actuel et celui vers lequel pointe le lien<br><br>
+
+    <span class="spanb">target</span> : _blank; _parent; _self; _top; framename ... Indique l'emplacement d'ouverture du lien<br><br>
+
+    <span class="spanb">type</span> : mime_type ... Indique le Type MIME du document vers lequel pointe le lien<br><br>
+
+
+
+<p>
+
+<a target="_BLANK" title="Titre du lien" href="http://www.adresse-du-lien.fr">
+Ce lien s'ouvrira dans un nouvel onglet
+</a><br>
+<textarea disabled rows="4" cols="75"><a target="_BLANK" title="Titre du lien" href="http://www.adresse-du-lien.fr">
+Ce lien s'ouvrira dans un nouvel onglet
+</a> </textarea><br>
+
+
+<a title="Titre du lien" href="http://www.adresse-du-lien.fr#ancre">
+Ceci est un lien vers une ancre
+</a><br>
+
+<textarea disabled rows="4" cols="75"><a title="Titre du lien" href="http://www.adresse-du-lien.fr#ancre">
+Ceci est un lien vers une ancre
+</a></textarea><br><br>
+
+    La balise <span class="spana"> &lt;a&gt;</span> prend en charge tous les attributs standart et d'événement HTML5.
+
+
+
+</p> 
+
+<h3>Les balises de navigation d'un document HTML5</h3>
+
+<p> 
+
+
+    <span class="spanb">&lt;a&gt;</span>  : Définit un lien hypertexte<br><br>
+    <span class="spanb">&lt;link&gt;</span> :  Définit la relation entre un document et une ressource externe<br> ( par exemple une feuilles de style )
+         <br><br>  <span class="spanb">&lt;nav&gt;</span>  :  Définit des liens de navigation 
+
+
+            
+    </div>
+
+    <div class="droite"> 
+
+        <img class="pix" src="https://pbs.twimg.com/profile_images/969562652639989760/2e0rAghb_400x400.jpg" alt="Avatar Dorothée">
+        <img class="pix" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/28468680_109451666554612_6844006574877310976_n.jpg?oh=2a14b77e637ac143908f3bee8f3c43e6&oe=5B454D3F"  alt="Avatar Arnaud">
+        <img class="pix" src="https://scontent-frx5-1.xx.fbcdn.net/v/t1.0-9/28472030_111713689661444_526320251754006447_n.jpg?oh=25b5353180186c9ad4e565f027c3ce07&oe=5B41C9BB" alt="Avatar Pierre">
+
+    </div>
+
+</body>
+
+</html>

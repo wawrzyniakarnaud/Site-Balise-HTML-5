@@ -1,0 +1,217 @@
+body {
+    display: flex;
+    background: url('background.jpg');
+}
+
+.header {
+    width: 20%;
+    font-size: 15px;
+    padding: 10px;
+    align-self: center;
+    position: fixed;
+    top: 10px;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    font: normal, Helvetica, sans-serif;
+    width: 400px;
+    margin-left: 230px;
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 800px;
+    text-shadow: 2px 2px 5px black;
+    text-transform: uppercase;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100px
+}
+
+li a {
+    display: block;
+    width: 100%;
+    padding: 10px;
+}
+
+.menu li {
+
+    margin-bottom: 21px;
+    background-color: #33B5E5;
+    color: #FFFFFF;
+    border-radius: 30px;
+    box-shadow: 3px 3px 10px black;
+    text-align: right;
+    padding-right: 20px;
+    margin-left: -200px
+}
+
+.menu li:hover {
+    background-color: #0099CC;
+    box-shadow: 2px 2px 5px black inset;
+    margin-right: -100px;
+
+}
+
+.index {
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 50px;
+    width: 55%;
+    border-radius: 20%;
+    margin: 10px;
+    box-shadow: lightgrey 2px 2px 10px, lightgrey -2px 2px 10px;
+    margin-left: 250px;
+    font-family: "dosis", sans-serif;
+
+
+
+}
+
+.index img {
+    width: 50%;
+    border: solid black 2px;
+    border-radius: 20px;
+    background-color: beige;
+    padding: 3%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    box-shadow: 1px 1px 1px inset;
+}
+
+.def {
+    position: relative;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.356);
+    padding: 50px;
+    width: 55%;
+    border-radius: 20%;
+    margin: 10px;
+    box-shadow: lightgrey 2px 2px 10px, lightgrey -2px 2px 10px;
+    margin-left: 250px;
+    font-family: "dosis", sans-serif;
+
+
+
+}
+
+p {
+    color: white;
+    font-size: 1.5em;
+}
+
+.def a {
+    text-transform: none;
+    color: lightblue;
+}
+
+.def a:hover {
+    color: blue;
+}
+
+.droite {
+
+    top: 60px;
+    right: 20px;
+    border-radius: 20px;
+    flex-direction: column;
+    display: flex;
+    width: 20%;
+    position: fixed;
+    align-self: center;
+
+}
+
+.pix {
+    height: 200px;
+    width: 200px;
+    box-shadow: black 2px 2Px 5px;
+    margin: 10px;
+    border-radius: 1000px;
+    align-self: center;
+}
+
+.pix:hover {
+    transform: scale(0.8);
+}
+
+h2 {
+    color: white;
+    font-size: 2.5em;
+    text-decoration: underline;
+}
+
+/* A */
+
+.spana {
+    color: yellow;
+    font-weight: bold;
+}
+
+.spanb {
+    font-weight: bold;
+    text-decoration: underline;
+    color: red;
+}
+
+h3 {
+    color: green;
+    font-size: 2em;
+    text-decoration: underline;
+}
+
+.ex p {
+    font-size: 30px;
+    text-transform: uppercase;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.rendu {
+    background-color: black;
+
+}
+
+.rendu nav {
+    text-align: center;
+    margin-left: 460px
+}
+
+fieldset {
+    width: 300px;
+    text-align: center;
+    margin: auto;
+    padding: auto;
+}
+
+footer {
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+
+}
+
+header {
+    background-color: black;
+    width: 200px;
+    height: 30px;
+    text-transform: uppercase;
+    text-align: center;
+    padding: auto;
+    margin: auto;
+}
